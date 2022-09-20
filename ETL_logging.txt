@@ -1,0 +1,42 @@
+20/09/2022 16:20:03 - DEBUG - La instalación de todos los paquetes e imports fue correcta.
+20/09/2022 16:20:03 - DEBUG - Comenzando descarga dataframe municipios API AEMET.
+20/09/2022 16:20:08 - INFO - Acceso API AEMET a dataframe municipios llevado con éxito. El dataframe contiene 8122 líneas.
+20/09/2022 16:20:08 - DEBUG - Comenzando descarga dataframe municipios INE doc.
+20/09/2022 16:20:11 - INFO - Acceso documento INE de municipios llevado con éxito. El dataframe contiene 8131 líneas.
+20/09/2022 16:20:11 - DEBUG - Comienza lectura tabla web INE códigos autonómicos y provinciales.
+20/09/2022 16:20:12 - INFO - Acceso tabla web INE al dataframe de códigos autonómicos y provinciales llevado con éxito. El dataframe contiene 52 líneas.
+20/09/2022 16:20:12 - INFO - Entidades provincias y comunidades_autonomas creadas.
+20/09/2022 16:20:12 - INFO - Merge datos INE municipales e INE códigos provinciales y autonómicos existoso. El dataframe resultante contiene 8131 líneas.
+20/09/2022 16:20:12 - INFO - Merge datos municipales INE y AEMET exitoso. El dataframe MUNICIPIOS contiene 8120 líneas.
+20/09/2022 16:20:12 - DEBUG - Comienza lectura tabla web INE callejero electoral con todas direcciones postales españolas.
+20/09/2022 16:21:11 - INFO - Descarga callejero electoral exitosa. El dataframe contiene 1480785 líneas.
+20/09/2022 16:21:13 - DEBUG - Tabla relación entre códigos postales y IDs de municipios creada correctamente.
+20/09/2022 16:21:13 - INFO - Información ZIPs agrupada en array agregada a vista materializada total_municipios.
+20/09/2022 16:21:13 - DEBUG - Comienza descarga web IGN de los polígonos recintos de cada municipio, provincia y comunidad.
+20/09/2022 16:22:09 - INFO - Descarga datos geométricos poligonales correcta.
+20/09/2022 16:22:10 - INFO - Entidad geometría municipios MUN_GEOMETRY creada con éxito.
+20/09/2022 16:22:10 - INFO - Información geométrica municipal agregada a vista materializada total_municipios.
+20/09/2022 16:22:11 - INFO - Entidad geometría municipios PRO_GEOMETRY creada con éxito.
+20/09/2022 16:22:12 - INFO - Lectura datos inventario estaciones AEMET API correcta. El dataframe contiene 291 líneas.
+20/09/2022 16:22:12 - INFO - Formato coordenadas geográficas entidad estaciones_AEMET corregido.
+20/09/2022 16:22:12 - DEBUG - Se inicia módulo depuración de textos.
+20/09/2022 16:22:12 - INFO - Minúsculas, acentos y abreviaturas corregidas en la columna provincia de la entidad municipios.
+20/09/2022 16:22:12 - INFO - Minúsculas y acentos corregidos en la columna provincia de la entidad estiones_AEMET.
+20/09/2022 16:22:12 - INFO - Se eliminan artículos y traducciones del campo provincia de ambas entidades.
+20/09/2022 16:22:12 - DEBUG - Finaliza módulo depuración de textos.
+20/09/2022 16:22:12 - INFO - La entidad estiones_AEMET contiene ahora CPRO.
+20/09/2022 16:22:54 - INFO - Intento de localizar estaciones en municipio correcto.
+20/09/2022 16:22:54 - INFO - La entidad estiones_AEMET aun presenta municipios sin INE_MUN_ID. Se ejecuta función locaclización 2.
+20/09/2022 16:23:41 - INFO - Intento 2 de localizar estaciones en municipio correcto.
+20/09/2022 16:23:41 - INFO - La entidad estiones_AEMET aun presenta municipios sin INE_MUN_ID. Se ejecuta función locaclización 3.
+20/09/2022 16:23:42 - INFO - Intento 3 de localizar estaciones en municipio correcto.
+20/09/2022 16:23:42 - INFO - La entidad estiones_AEMET contiene ahora INE_MUN_ID.
+20/09/2022 16:23:42 - INFO - La entidad estaciones_NOAA ha sido creada con éxito. API NOAA correcta. El dataframe contiene 199 líneas.
+20/09/2022 16:50:47 - INFO - Intento 1 de localizar estaciones en municipio correcto estaciones_NOAA.
+20/09/2022 16:50:47 - INFO - La entidad estiones_NOAA aun presenta municipios sin INE_MUN_ID.
+20/09/2022 16:51:21 - INFO - Intento 2 de localizar estaciones en municipio correcto estaciones_NOAA.
+20/09/2022 16:51:21 - INFO - La entidad estiones_NOAA contiene ahora INE_MUN_ID.
+20/09/2022 16:51:21 - DEBUG - Se inicia módulo de carga de datos observaciones metereológicas.
+20/09/2022 17:13:38 - INFO - Observaciones metereológicas AEMET diarias cargadas con éxito. El dataframe contiene 1074712 líneas.
+20/09/2022 17:21:50 - INFO - Observaciones metereológicas NOAA diarias cargadas con éxito. El dataframe contiene 731211 líneas.
+20/09/2022 17:21:50 - DEBUG - Se finaliza módulo de carga de datos observaciones metereológicas.
